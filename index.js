@@ -19,16 +19,16 @@ function computerChoice() {
 // I chose '.floor' to round it to a full number. 
 // The reason made it '* gameChoice.length' is so that I didn´t need to think about the number it will eventually need, in the random number.
 
-if (numberGenerator === 0) {
-    Computer = 'rock';
-} else if (numberGenerator === 1) {
-    Computer = 'paper';
-} else if (numberGenerator === 2) {
-    Computer = 'scissor';
-} else if (numberGenerator === 3) {
-    Computer = 'lizard';
-} else {
-    Computer = 'spock';
+    if (numberGenerator === 0) {
+        Computer = 'rock';
+    } else if (numberGenerator === 1) {
+        Computer = 'paper';
+    } else if (numberGenerator === 2) {
+        Computer = 'scissor';
+    } else if (numberGenerator === 3) {
+        Computer = 'lizard';
+    } else {
+        Computer = 'spock';
 }
 
 computerDisplay.innerHTML = Computer;
