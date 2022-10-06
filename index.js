@@ -1,109 +1,109 @@
-const computerDisplay = document.getElementById('computer-choice')
-const userDisplay = document.getElementById('user-choice')
-const resultDisplay = document.getElementById('result')
-const gameChoice  = document.querySelectorAll('button')
+const computerDisplay = document.getElementById('computer-choice');
+const userDisplay = document.getElementById('user-choice');
+const resultDisplay = document.getElementById('result');
+const gameChoice  = document.querySelectorAll('button');
 
-let User
-let Computer
-let Result
+let User;
+let Computer;
+let Result;
 
 gameChoice.forEach(gameChoice => gameChoice.addEventListener('click',(e) => {
-    User = e.target.id
-    userDisplay.innerHTML = User
-    computerChoice ()
-    getResult()
-}))
+    User = e.target.id;
+    userDisplay.innerHTML = User;
+    computerChoice ();
+    getResult();
+}));
 
 function computerChoice() {
-    const numberGenerator = Math.floor(Math.random() * gameChoice.length)
+    const numberGenerator = Math.floor(Math.random() * gameChoice.length);
 // I chose '.floor' to round it to a full number. 
 // The reason made it '* gameChoice.length' is so that I didn´t need to think about the number it will eventually need, in the random number.
 
 if (numberGenerator === 0) {
-    Computer = 'rock'
+    Computer = 'rock';
 }
 if (numberGenerator === 1) {
-    Computer = 'paper'
+    Computer = 'paper';
 }
 if (numberGenerator === 2) {
-    Computer = 'scissor'
+    Computer = 'scissor';
 }
 if (numberGenerator === 3) {
-    Computer = 'lizard'
+    Computer = 'lizard';
 }
 if (numberGenerator === 4) {
-    Computer = 'spock'
+    Computer = 'spock';
 }
 
-computerDisplay.innerHTML = Computer
-}
+computerDisplay.innerHTML = Computer;
+};
 
 function getResult() {
 
     if (Computer === User){
-        Result = ' It is a draw! '
+        Result = ' It is a draw! ';
     }
     if (Computer === 'rock' && User === 'paper') {
-        Result = ' Paper catches rock. You have won! '
+        Result = ' Paper catches rock. You have won! ';
     }
     if (Computer === 'rock' && User === 'scissor') {
-        Result = ' Scissor blunts on rock. You have lost! '
+        Result = ' Scissor blunts on rock. You have lost! ';
     }
     if (Computer === 'rock' && User === 'lizard') {
-        Result = ' Rock crushes lizard. You have lost! '
+        Result = ' Rock crushes lizard. You have lost! ';
     }
     if (Computer === 'rock' && User === 'spock') {
-        Result = ' Spock vaporizes rock. You have won! '
+        Result = ' Spock vaporizes rock. You have won! ';
     }
     if (Computer === 'paper' && User === 'rock') {
-        Result = ' Paper catches rock. You have lost! '
+        Result = ' Paper catches rock. You have lost! ';
     }
     if (Computer === 'paper' && User === 'scissor') {
-        Result = ' Scissor cuts paper. You have won! '
+        Result = ' Scissor cuts paper. You have won! ';
     }
     if (Computer === 'paper' && User === 'lizard') {
-        Result = ' Lizard eats paper. You have won! '
+        Result = ' Lizard eats paper. You have won! ';
     }
     if (Computer === 'paper' && User === 'spock') {
-        Result = ' Paper disproves Spock. You have lost! '
+        Result = ' Paper disproves Spock. You have lost! ';
     }
     if (Computer === 'scissor' && User === 'rock') {
-        Result = ' Scissor blunts on rock. You have won! '
+        Result = ' Scissor blunts on rock. You have won! ';
     }
     if (Computer === 'scissor' && User === 'paper') {
-        Result = ' Scissor cuts paper. You have lost! '
+        Result = ' Scissor cuts paper. You have lost! ';
     }
     if (Computer === 'scissor' && User === 'lizard') {
-        Result = ' Scissor decapitates lizard. You have lost! '
+        Result = ' Scissor decapitates lizard. You have lost! ';
     }
     if (Computer === 'scissor' && User === 'spock') {
-        Result = ' Spock smashes scissors. You have won! '
+        Result = ' Spock smashes scissors. You have won! ';
     }
     if (Computer === 'lizard' && User === 'rock') {
-        Result = ' Rock crushes lizard. You have won! '
+        Result = ' Rock crushes lizard. You have won! ';
     }
     if (Computer === 'lizard' && User === 'paper') {
-        Result = ' Lizard eats paper. You have lost! '
+        Result = ' Lizard eats paper. You have lost! ';
     }
     if (Computer === 'lizard' && User === 'scissor') {
-        Result = ' Scissor decapitates lizard. You have won! '
+        Result = ' Scissor decapitates lizard. You have won! ';
     }
     if (Computer === 'lizard' && User === 'spock') {
-        Result = ' Lizard poisons Spock. You have lost! '
+        Result = ' Lizard poisons Spock. You have lost! ';
     }
     if (Computer === 'spock' && User === 'rock') {
-        Result = ' Spock vaporizes rock. You have lost! '
+        Result = ' Spock vaporizes rock. You have lost! ';
     }
     if (Computer === 'spock' && User === 'paper') {
-        Result = ' Paper disproves Spock. You have won! '
+        Result = ' Paper disproves Spock. You have won! ';
     }
     if (Computer === 'spock' && User === 'scissor') {
-        Result = ' Spock smashes scissors. You have lost! '
+        Result = ' Spock smashes scissors. You have lost! ';
     }
     if (Computer === 'spock' && User === 'lizard') {
-        Result = ' Lizard poisons Spock. You have won! '
+        Result = ' Lizard poisons Spock. You have won! ';
     }
     
-    resultDisplay.innerHTML = Result
+    resultDisplay.innerHTML = Result;
 
-}
+};
