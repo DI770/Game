@@ -38,7 +38,8 @@ function getResult() {
 
     if (Computer === User){
         Result = ' It is a draw! ';
-    } else if (Computer === 'rock' && User === 'paper') {
+    } 
+    if (Computer === 'rock' && User === 'paper') {
         Result = ' Paper catches rock. You have won! ';
     } else if (Computer === 'rock' && User === 'scissor') {
         Result = ' Scissor blunts on rock. You have lost! ';
