@@ -56,6 +56,11 @@ nav a:hover {
 }
 }
 
+.rules {
+    text-align: left;
+    margin-left: 37%;
+}
+
 /* ---Buttons--- */
 
 .btn {
@@ -79,3 +84,4 @@ nav a:hover {
     background-color: black;
     color: beige;
 }
+
