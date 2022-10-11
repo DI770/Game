@@ -15,6 +15,17 @@ body {
     color: beige;
 }
 
+
+/*---Images---*/
+
+.logo {
+    float: left;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: 0%;
+    display: flex;
+}
+
 /* ---Navigation--- */
 
 nav ul {
