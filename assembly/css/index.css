@@ -23,6 +23,7 @@ nav ul {
     text-align: center;
     padding: 0;
     margin: 0;    
+    padding-bottom: 5%;
 }
 
 nav li {
@@ -49,12 +50,12 @@ nav a:hover {
 @media screen and (max-width:50em){
 .logo {
     display: flexbox;
+    border-top: 20px solid royalblue;
     width: 50%;
     height: 50%;
     padding-top: 5%;
 }
 }
-
 
 /* ---Gameboard--- */
 
