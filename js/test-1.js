@@ -10,6 +10,7 @@ let Result;
 _GameRound.forEach(gameChoice => gameChoice.addEventListener('click',(e) => {
     User = e.target.id;
     userDisplay.innerHTML = User;
+    console.log(User);
     computerChoice ();
     getResult();
 }))
