@@ -15,17 +15,6 @@ body {
     color: beige;
 }
 
-
-/*---Images---*/
-
-.logo {
-    float: left;
-    width: 50%;
-    margin-left: 0%;
-    margin-right: 0%;
-    display: flex;
-}
-
 /* ---Navigation--- */
 
 nav ul {
@@ -55,6 +44,18 @@ nav a:hover {
     color: #4a4a4f;
 }
 
+/*---Images---*/
+
+@media screen and (max-width:50em){
+.logo {
+    display: flexbox;
+    width: 50%;
+    height: 50%;
+    padding-top: 5%;
+}
+}
+
+
 /* ---Gameboard--- */
 
 .main {
@@ -67,9 +68,27 @@ nav a:hover {
 }
 }
 
+.t-rules {
+    border: 1rem;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
 .rules {
-    text-align: left;
-    margin-left: 37%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    padding-bottom: 20px;
+    border: 1rem;
+}
+
+.rules ul {
+    list-style: none;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 0px;
+    padding-bottom: 20px;
+    border: 1rem;
 }
 
 /* ---Buttons--- */
