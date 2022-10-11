@@ -1,18 +1,18 @@
 const computerDisplay = document.getElementById('computer-choice');
 const userDisplay = document.getElementById('user-choice');
 const resultDisplay = document.getElementById('result');
-const gameChoice  = document.querySelectorAll('button');
+const gameChoice = document.querySelectorAll('button');
 
 let User;
 let Computer;
 let Result;
 
-_GameRound.forEach(gameChoice => gameChoice.addEventListener('click',(e) => {
+gameChoice.forEach(gameChoice => gameChoice.addEventListener ('click', (e) => {
     User = e.target.id;
     userDisplay.innerHTML = User;
-    console.log(User);
     computerChoice ();
     getResult();
+
 }))
 
 function computerChoice() {
@@ -34,7 +34,7 @@ function computerChoice() {
 
 computerDisplay.innerHTML = Computer;
 }
-// I tried to make the code in the if / If else, statements here. But I think I need to change the readability.
+// I tried to make the code in the If / If else, statements here. But I think I need to change the readability.
 function getResult() {
 
     if (Computer === User){
