@@ -15,6 +15,14 @@ body {
     color: beige;
 }
 
+.quote-box {
+    font-size: 15px;
+}
+
+.quote {
+    font-size: 50px;
+}
+
 /* ---Navigation--- */
 
 nav ul {
