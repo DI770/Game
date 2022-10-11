@@ -8,8 +8,8 @@
         <script src="https://kit.fontawesome.com/3500e67f8a.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
         
-        <link rel="stylesheet" href="assembly/css/index.css">
-        <title>RPSLS</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Quotes</title>
     
     </head>
     <body>
@@ -22,49 +22,12 @@
             </ul>
         </nav>
     
-        <h1 class="main"> ROCK PAPER SCISSOR LIZARD SPOCK </h1>
-    
-        <div class="game-area">
-    
-            <button data-type="rock" class="btn btn--big"> 
-                <i class="fa-regular fa-hand-back-fist"></i>
-            </button>
-    
-            <button data-type="paper" class="btn btn--big"> 
-                <i class="fa-regular fa-hand"></i>
-            </button>
-            
-            <button data-type="scissor" class="btn btn--big"> 
-                <i class="fa-regular fa-hand-scissors"></i>
-            </button>
-    
-            <button data-type="lizard" class="btn btn--big">
-                <i class="fa-regular fa-hand-lizard"></i>
-            </button>
-    
-            <button data-type="spock" class="btn btn--big"> 
-                <i class="fa-regular fa-hand-spock"></i>
-            </button>
-    
+        <div id="quote-box">
+            <p class="quote">You can do anything but not everything</p>
+            <p class="source"> David Allen, <span class="citation"> Making It All Work </span> <span class="year"> 2009 </span></p>
+          </div>
+          <button id="loadQuote"> Show another quote </button>
         </div>
-    
-        
-        <div class="window">
-            
-            <div id="you">
-            <h2> Player Choice: <span id="user-choice"></span></h2>
-            </div>
-            
-            <div id="computer">
-            <h2> Computer Choice: <span id="computer-choice"></span></h2>
-            </div>
-            
-            <div id="res">
-            <h2> Result: <span id="result"></span></h2>
-            </div>
-    
-        </div>
-    
-        <script src="test-2.html"></script>
-    </body>
+        <script src="js/test-2.js"></script>
+      </body>
 </html>
