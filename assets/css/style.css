@@ -121,8 +121,19 @@ nav a:hover {
     transition: all 0.4s;
 }
 
+.btn--big--big {
+    padding-top: 5px;
+    border-radius: 50%;
+    border: 3px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 3.2rem;
+    margin: 0 10px;
+    transition: all 0.4s;
+}
+
 .btn:hover {
-    background-color: black;
+    background-color: royalblue;
     color: beige;
 }
 
