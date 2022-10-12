@@ -188,7 +188,7 @@ nav a:hover {
 
 .choice {
     background: beige;
-    border: 4px solid beige;
+    border: 4px solid  rgba(235,45,58);
     display: inline-block;
     border-radius: 30%;
     padding: 10px;
@@ -197,6 +197,7 @@ nav a:hover {
 }
 
 .choice:hover {
-    background-color: rosybrown;
+    background-color:  rgba(235,45,58);
+    border: 4px solid beige;
     cursor: pointer;;
 }
