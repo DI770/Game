@@ -219,6 +219,109 @@ let quotes = [
     quote: "The greatest glory in living lies not in never falling, but in rising every time we fall.",
     source: "Nelson Mandela"
     },
+	{
+	quote: "Never let the fear of striking out keep you from playing the game.",
+	source:"Babe Ruth"
+	},
+	{
+	quote: "Many of life's failures are people who did not realize how close they were to success when they gave up.",
+	source:"Thomas A. Edison"
+	},
+	{
+	quote: "You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose.",
+	source: "Dr. Seuss"
+	},
+	{
+	quote: "Life is never fair, and perhaps it is a good thing for most of us that it is not.",
+	source: "Oscar Wilde"
+	},
+	{
+	quote: "The only impossible journey is the one you never begin.",
+	source: "Tony Robbins"
+	},
+	{
+	quote: "In this life we cannot do great things. We can only do small things with great love.",
+	source: "Mother Teresa"
+	},
+	{
+	quote: "Life is really simple, but we insist on making it complicated.",
+	source: "Confucius",
+	year: "479 B.C.E."
+	},
+	{
+	quote: "Do not let making a living prevent you from making a life.",
+	source: "John Wooden"
+	},
+	{
+	quote: "Life is a long lesson in humility.",
+	source: "James M. Barrie"
+	},
+	{
+	quote: "In three words I can sum up everything I've learned about life: it goes on. ",
+	source: "Robert Frost"
+	},
+	{
+	quote: "Life is either a daring adventure or nothing at all.",
+	source: "Helen Keller"
+	},
+	{
+	quote: "Life is trying things to see if they work. ",
+	source: "Ray Bradbury"
+	},
+	{
+	quote: "You can do anything but not everything",
+	source: " David Allen, ", 
+	citation: " Making It All Work ",
+	year: "2009" 
+	},
+	{
+	quote: "Success is not final; failure is not fatal: It is the courage to continue that counts.",
+	source: "Winston S. Churchill"
+	},
+	{
+	quote: "If you really look closely, most overnight successes took a long time. ",
+	source: "Steve Jobs"
+	},
+	{
+	quote: "The secret of success is to do the common thing uncommonly well.",
+	source: "John D. Rockefeller Jr."
+	},
+	{
+	quote: "The real test is not whether you avoid this failure, because you won't. It's whether you let it harden or shame you into inaction, or whether you learn from it; whether you choose to persevere.",
+	source: "Barack Obama"
+	},
+	{
+	quote: "Don't be distracted by criticism. Remember — the only taste of success some people get is to take a bite out of you.",
+	source: "Zig Ziglar"
+	},
+	{
+	quote: "It is better to fail in originality than to succeed in imitation.",
+	source: "Herman Melville"
+	},
+	{
+	quote: "I failed my way to success.",
+	source: "Thomas Edison"
+	},
+	{
+	quote: "A successful man is one who can lay a firm foundation with the bricks others have thrown at him.",
+	source: "David Brinkley"
+	},
+	{
+	quote: "Try not to become a man of success. Rather become a man of value.",
+	source: "Albert Einstein"
+	},
+	{
+	quote: "Don't be afraid to give up the good to go for the great.",
+	source: "John D. Rockefeller"
+	},
+	{
+	quote: "Always bear in mind that your own resolution to success is more important than any other one thing.",
+	source: "Abraham Lincoln"
+	},
+	{
+	quote: "Success is walking from failure to failure with no loss of enthusiasm.",
+	source: "Winston Churchill"
+	}
 ];
 
 //Function to randomly select a quote value and return a random quote object from the quotes array
