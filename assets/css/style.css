@@ -106,7 +106,7 @@ nav a:hover {
     border: 1rem;
 }
 
-.score-board{
+.score-board {
     background: black;
     margin: 20px auto;
     width: 200px;
@@ -127,19 +127,23 @@ nav a:hover {
 
 #user-label {
     position: absolute;
-    top: 70px;
-    left: -150px;
+    top: 80px;
+    left: -45px;
 }
 
 #computer-label {
     position: absolute;
-    top: 70px;
-    right: -190px;
+    top: 80px;
+    right: -45px;
 }
 
 .result {
+    padding-top: 10px;
     font-family: fantasy;
     font-size: 33px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1rem;
 }
 
 #action {
@@ -188,6 +192,7 @@ nav a:hover {
 
 .choice {
     background: beige;
+    color: yellow;
     border: 4px solid  rgba(235,45,58);
     display: inline-block;
     border-radius: 30%;
