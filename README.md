@@ -7,7 +7,7 @@
  - [Images](#Images)
  - [Youtube Videos](#Youtube-Videos)
  - [Links](#Links)
- - [Extra Word](#Extra Word)
+ - [Extra Word](#Extra-Word)
 
 # Introduction
 
