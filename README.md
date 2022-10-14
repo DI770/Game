@@ -1,5 +1,3 @@
-`python3 -m http.server`
-
  # Contents 
  
  - [Introduction](#Introduction)
@@ -10,6 +8,9 @@
  - [Links](#Links)
 
 # Introduction
+
+
+
 ## Problems 
 
 Most of my problems that I have had, has been to centering my pictures and videos.
@@ -35,12 +36,12 @@ Just press Ctrl + F and search for the targeted name.
 
 ## Material
 
+
 ### Images
 
-<img src="assets/images/RPSLS.jpg">
+<img src="assets/images/RPSLS.jpg"> 
 
 <img src="assets/images/rock.png">- - - - -<img src="assets/images/paper.png">- - - - -<img src="assets/images/scissor.png">- - - - -<img src="assets/images/lizard.png">- - - - -<img src="assets/images/spock.png">
-
 
 
 ### Youtube Videos
