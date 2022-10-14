@@ -1,71 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <script src="https://kit.fontawesome.com/3500e67f8a.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link rel="stylesheet" href="assets/css/style.css">
-        <title>Game</title>
+    <script src="https://kit.fontawesome.com/3500e67f8a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
     
-    </head>
-    <body>
+    <link rel="stylesheet" href="assets/css/style.css">
 
-        <nav>
-            <ul>
-            <li><a href="index.html">Page 1</a></li>
-            <li><a href="test-1.html">Page 2</a></li>
-            <li><a href="test-2.html">Page 3</a></li>
-            </ul>
-        </nav>
-    
-        <div>
-            <h1 class="main"> ROCK PAPER SCISSOR LIZARD SPOCK </h1>
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+        <li><a href="index.html">Page 1</a></li>
+        <li><a href="test-1.html">Page 2</a></li>
+        <li><a href="test-2.html">Page 3</a></li>
+        <li><a href="great1.html">secret page</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1> Rock Paper Scissor Lizard Spock </h1>
+    </header>
+
+    <div class="score-board">
+        <div id="user-label" class="badge">Player</div>
+        <div id="computer-label" class="badge">Machine</div>
+        <span id="player-score">0</span> : <span id="computer-score">0</span>
+    </div>
+
+    <div class="result">
+        <p> Welcome to the game! </p>
+    </div>
+
+    <div class="choices">
+        <div class="choice" id="r">
+            <img src="assets/images/rock.png" alt="rock">
         </div>
-        
-        <div class="window">
-            
-            <div id="you">
-            <h2> Player Choice: <span id="user-choice"></span></h2>
-            </div>
-            
-            <div id="computer">
-            <h2> Computer Choice: <span id="computer-choice"></span></h2>
-            </div>
-            
-            <div id="res">
-            <h2> Result: <span id="result"></span></h2>
-            </div>
-    
+        <div class="choice" id="p">
+            <img src="assets/images/paper.png" alt="paper">
         </div>
-    
-        <div class="game-area">
-    
-            <button id="rock"  class="btn btn--big"> 
-                <i class="fa-regular fa-hand-back-fist"></i>
-            </button>
-    
-            <button id="paper" class="btn btn--big"> 
-                <i class="fa-regular fa-hand"></i>
-            </button>
-            
-            <button id="scissor" class="btn btn--big"> 
-                <i class="fa-regular fa-hand-scissors"></i>
-            </button>
-    
-            <button id="lizard" class="btn btn--big">
-                <i class="fa-regular fa-hand-lizard"></i>
-            </button>
-    
-            <button id="spock" class="btn btn--big"> 
-                <i class="fa-regular fa-hand-spock"></i>
-            </button>
-    
+        <div class="choice" id="s">
+            <img src="assets/images/scissor.png" alt="scissor">
         </div>
+        <div class="choice" id="l">
+            <img src="assets/images/lizard.png" alt="lizard">
+        </div>
+        <div class="choice" id="sp">
+            <img src="assets/images/spock.png" alt="spock">
+        </div>
+    </div>
     
-        <script src="js/test-1.js"></script>
-    </body>
+    <p id="action">Make your selection!</p>
+
+    <script src="js/test-1.js"></script>
+</body>
 </html>

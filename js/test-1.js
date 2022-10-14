@@ -1,91 +1,114 @@
-const computerDisplay = document.getElementById('computer-choice');
-const userDisplay = document.getElementById('user-choice');
-const resultDisplay = document.getElementById('result');
-const gameChoice = document.querySelectorAll('button');
+let _PlayerScore = 0;
+let _ComputerScore = 0;
+const _PlayerScore_span = document.getElementById("player-score");
+const _ComputerScore_span = document.getElementById("computer-score");
+const _ScoreBoard_div = document.querySelector(".score-board");
+const _Result_div_p = document.querySelector(".result > p");
+const _Rock_div = document.getElementById('r');
+const _Paper_div = document.getElementById('p');
+const _Scissor_div = document.getElementById('s');
+const _Lizard_div = document.getElementById('l');
+const _Spock_div = document.getElementById('sp');
 
-let User;
-let Computer;
-let Result;
 
-gameChoice.forEach(gameChoice => gameChoice.addEventListener ('click', (e) => {
-    User = e.target.id;
-    userDisplay.innerHTML = User;
-    computerChoice ();
-    getResult();
-
-}))
-
-function computerChoice() {
-    const numberGenerator = Math.floor(Math.random() * gameChoice.length);
-// I chose '.floor' to round it to a full number. 
-// The reason made it '* gameChoice.length' is so that I didn´t need to think about the number it will eventually need, in the random number.
-
-    if (numberGenerator === 0) {
-        Computer = 'rock';
-    } else if (numberGenerator === 1) {
-        Computer = 'paper';
-    } else if (numberGenerator === 2) {
-        Computer = 'scissor';
-    } else if (numberGenerator === 3) {
-        Computer = 'lizard';
-    } else {
-        Computer = 'spock';
+function _Library (_Letter) {
+    if (_Letter === 'r' ) return 'rock';
+    if (_Letter === 'p') return 'paper';
+    if (_Letter === 's') return 'scissor';
+    if (_Letter === 'l') return 'lizard';
+    return 'Spock';
 }
 
-computerDisplay.innerHTML = Computer;
+function _Win (_UserChoice, _ComputerChoice) {
+    _PlayerScore++
+    _PlayerScore_span.innerHTML = _PlayerScore;
+    _ComputerScore_span.innerHTML = _ComputerScore;
+    const _UserWord = 'Players choice of,'.fontsize(6);
+    const _ComputerWord = 'Computers choice of,'.fontsize(6);
+    _Result_div_p.innerHTML = `${_UserWord} ${_Library(_UserChoice)+'.'} Trumps over ${_ComputerWord} ${_Library(_ComputerChoice)}. You win!`
 }
-// I tried to make the code in the If / If else, statements here. But I think I need to change the readability.
-function getResult() {
 
-    if (Computer === User){
-        Result = ' It is a draw! ';
-    } 
-    if (Computer === 'rock' && User === 'paper') {
-        Result = ' Paper catches rock. You have won! ';
-    } else if (Computer === 'rock' && User === 'scissor') {
-        Result = ' Scissor blunts on rock. You have lost! ';
-    } else if (Computer === 'rock' && User === 'lizard') {
-        Result = ' Rock crushes lizard. You have lost! ';
-    } else if (Computer === 'rock' && User === 'spock') {
-        Result = ' Spock vaporizes rock. You have won! ';
-    }
-    if (Computer === 'paper' && User === 'rock') {
-        Result = ' Paper catches rock. You have lost! ';
-    } else if (Computer === 'paper' && User === 'scissor') {
-        Result = ' Scissor cuts paper. You have won! ';
-    } else if (Computer === 'paper' && User === 'lizard') {
-        Result = ' Lizard eats paper. You have won! ';
-    } else if (Computer === 'paper' && User === 'spock') {
-        Result = ' Paper disproves Spock. You have lost! ';
-    }
-    if (Computer === 'scissor' && User === 'rock') {
-        Result = ' Scissor blunts on rock. You have won! ';
-    } else if (Computer === 'scissor' && User === 'paper') {
-        Result = ' Scissor cuts paper. You have lost! ';
-    } else if (Computer === 'scissor' && User === 'lizard') {
-        Result = ' Scissor decapitates lizard. You have lost! ';
-    } else if (Computer === 'scissor' && User === 'spock') {
-        Result = ' Spock smashes scissors. You have won! ';
-    }
-    if (Computer === 'lizard' && User === 'rock') {
-        Result = ' Rock crushes lizard. You have won! ';
-    } else if (Computer === 'lizard' && User === 'paper') {
-        Result = ' Lizard eats paper. You have lost! ';
-    } else if (Computer === 'lizard' && User === 'scissor') {
-        Result = ' Scissor decapitates lizard. You have won! ';
-    } else if (Computer === 'lizard' && User === 'spock') {
-        Result = ' Lizard poisons Spock. You have lost! ';
-    }
-    if (Computer === 'spock' && User === 'rock') {
-        Result = ' Spock vaporizes rock. You have lost! ';
-    } else if (Computer === 'spock' && User === 'paper') {
-        Result = ' Paper disproves Spock. You have won! ';
-    } else if (Computer === 'spock' && User === 'scissor') {
-        Result = ' Spock smashes scissors. You have lost! ';
-    } else if (Computer === 'spock' && User === 'lizard') {
-        Result = ' Lizard poisons Spock. You have won! ';
-    }
-    
-    resultDisplay.innerHTML = Result;
-
+function _Loose (_UserChoice, _ComputerChoice) {
+    _ComputerScore++
+    _PlayerScore_span.innerHTML = _PlayerScore;
+    _ComputerScore_span.innerHTML = _ComputerScore;
+    const _UserWord = 'Players choice of,'.fontsize(6);
+    const _ComputerWord = 'Computers choice of,'.fontsize(6);
+    _Result_div_p.innerHTML = `${_UserWord} ${_Library(_UserChoice)+'.'} Looses to ${_ComputerWord} ${_Library(_ComputerChoice)}. Computer wins!`
 }
+
+function _Tie (_UserChoice, _ComputerChoice) {
+    _PlayerScore_span.innerHTML = _PlayerScore;
+    _ComputerScore_span.innerHTML = _ComputerScore;
+    const _UserWord = 'Players choice of,'.fontsize(6);
+    const _ComputerWord = 'Computers choice of,'.fontsize(6);
+    _Result_div_p.innerHTML = `${_UserWord} ${_Library(_UserChoice)+'.'} Equals ${_ComputerWord} ${_Library(_ComputerChoice)}. It is a tie!`
+}
+
+function _GetComputerChoice () {
+    const _Choices = ['r', 'p', 's', 'l', 'sp'];
+    const _RandomNumber = Math.floor(Math.random() * 5);
+	return _Choices [_RandomNumber];
+}
+
+function _Game(_UserChoice) {
+    const _ComputerChoice = _GetComputerChoice ();
+    switch (_UserChoice + _ComputerChoice){
+        case 'rs':
+        case 'rl':
+        case 'pr':
+        case 'psp':
+        case 'sp':
+        case 'sl':
+        case 'lp':
+        case 'lsp':
+        case 'sps':
+        case 'spr':
+                _Win(_UserChoice, _ComputerChoice);
+            break;
+        case 'sr':
+        case 'lr':
+        case 'rp':
+        case 'spp':
+        case 'ps':
+        case 'ls':
+        case 'pl':
+        case 'spl':
+        case 'sps':
+        case 'rsp':
+                _Loose(_UserChoice, _ComputerChoice);
+            break
+        case 'rr':
+        case 'pp':
+        case 'ss':
+        case 'll':
+        case 'spsp':
+                _Tie(_UserChoice, _ComputerChoice);
+            break
+}
+}
+
+_Main();
+
+function _Main() {
+    _Rock_div.addEventListener('click', function () {
+        _Game('r');
+    })
+
+    _Paper_div.addEventListener('click', function () {
+        _Game('p');
+    })
+
+    _Scissor_div.addEventListener('click', function () {
+        _Game('s');
+    })
+
+    _Lizard_div.addEventListener('click', function () {
+        _Game('l');
+    })
+
+    _Spock_div.addEventListener('click', function () {
+        _Game('sp');
+    })
+}
+
