@@ -1,4 +1,4 @@
-let quotes = [
+let _Quotes = [
 	{
 	quote: "Be who you are and say what you feel, because those who mind don't matter and those who matter don't mind.",
 	source: "Dr. Seuss"
@@ -325,31 +325,31 @@ let quotes = [
 ];
 
 //Function to randomly select a quote value and return a random quote object from the quotes array
-function getRandomQuote () {
-	let randomNumber = Math.floor(Math.random() * (quotes.length));
-	let randomQuote = quotes[randomNumber];
-	return randomQuote;
+function _GetRandomQuote () {
+	const _RandomNumber = Math.floor(Math.random() * (_Quotes.length));
+	const _RandomQuote = _Quotes[_RandomNumber];
+	return _RandomQuote;
 }	
 
-//Function to call the getRandomQuote function and stores the returned quote object in a variable
+//Function to call the _GetRandomQuote function and stores the returned quote object in a variable
 //Constructs a string containing the different properties of the quote object 
-function printQuote () {
-	let quotes = getRandomQuote ();
-	let quoteContainer = document.getElementById("quote-box");
-	let quoteString = `<p class="quote">${quotes.quote}</p><p class="source">${quotes.source}`;
-		if (quotes.citation) {quoteString += `<span class="citation">${quotes.citation}</span>`}
-		if (quotes.year) {quoteString += `<span class="year">${quotes.year}</span></p>`}
-		else {quoteString += '</p>'};
-	quoteContainer.innerHTML = quoteString;
+function _PrintQuote () {
+	const _Quotes = _GetRandomQuote ();
+	const _QuoteContainer_id = document.getElementById("quote-box");
+	let _QuoteString = `<p class="quote">${_Quotes.quote}</p><p class="source">${_Quotes.source}`;
+		if (_Quotes.citation) {_QuoteString += `<span class="citation">${_Quotes.citation}</span>`}
+		if (_Quotes.year) {_QuoteString += `<span class="year">${_Quotes.year}</span></p>`}
+		else {_QuoteString += '</p>'};
+	_QuoteContainer_id.innerHTML = quoteString;
 }
 
-//Quote automatically refreshes every 60 seconds
+//Quote automatically refreshes every 30 seconds
 window.setInterval(function(){
 printQuote ();
-}, 60000);
+}, 30000);
 
 //Event listener on LoadQuote button to generate new quote		
-document.getElementById("loadQuote").addEventListener("click", printQuote, true);
+document.getElementById("loadQuote").addEventListener("click", _PrintQuote, true);
 
 
 
