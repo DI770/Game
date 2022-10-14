@@ -37,20 +37,9 @@ Just press Ctrl + F and search for the targeted name.
 
 ### Images
 
-![Tiny Tina RPG](https://i.giphy.com/media/xVtHNOP8P0RX3zkFix/giphy.webp)
-Tiny Tina RPG:
+<img src="assets/images/RPSLS.jpg">
 
-
-![Court Jester](https://i.pinimg.com/originals/36/99/00/36990036e587d6471b0d49a1c47317bc.gif)
-Court Jester: 
-
-
-Dungeon and Dragons:
-![Dungeon and Dragons](https://m.media-amazon.com/images/M/MV5BOWM0MjNkMjEtY2IyNi00ODdmLTk0ODctNjY3YTQzN2Y3N2ZiXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_FMjpg_UX1000_.jpg)
-
-
-Trudvang:
-![Trudvang](https://perkan-arts.com/____impro/1/images/dod/liten_kvalerkorp.jpg?etag=%22bc9f2-55e7e0af%22&sourceContentType=image%2Fjpeg&quality=85)
+<img src="assets/images/rock.png">- - - - -<img src="assets/images/paper.png">- - - - -<img src="assets/images/scissor.png">- - - - -<img src="assets/images/lizard.png">- - - - -<img src="assets/images/spock.png">
 
 
 
@@ -60,17 +49,9 @@ Trudvang:
 
 [![Web Development Tutorial - JavaScript, HTML, CSS - Rock Paper Scissors Game](http://img.youtube.com/vi/jaVNP3nIAv0/0.jpg)](http://www.youtube.com/watch?v=jaVNP3nIAv0)
 
-[![Kevin Powell](http://img.youtube.com/vi/LGQuIIv2RVA/0.jpg)](http://www.youtube.com/watch?v=LGQuIIv2RVA)
+[![CodeDuck - Random Quote Generator](http://img.youtube.com/vi/NmstSmMykqc/0.jpg)](http://www.youtube.com/watch?v=NmstSmMykqc)
 
 
 ### Links
 
-[freecodecamp](https://www.freecodecamp.org/news/javascript-projects-for-beginners/#how-to-create-a-color-flipper)
-
-[Trudvang](https://drakarochdemonertrudvang.fandom.com/wiki/Trudvang)
-
-[Trudvang Images](https://perkan-arts.com/portfolio/trudvang)
-
-[Roleplay and Autism](https://www.linkedin.com/pulse/how-role-playing-games-help-neurodiverse-autism-hawke-robinson/)
-
-[Roleplay and Children](https://www.pbcexpo.com.au/blog/reasons-why-role-playing-is-important-for-your-child)
+[Freecodecamp - 40 JavaScript Projects for Beginners](https://www.freecodecamp.org/news/javascript-projects-for-beginners/#how-to-create-a-color-flipper)
