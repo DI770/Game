@@ -56,9 +56,7 @@ Trudvang:
 
 ### Youtube Videos
 
-[![JavaScript Programming - Full Course](http://img.youtube.com/vi/jS4aFq5-91M&list=LL&index=2&t=4s/0.jpg)](http://www.youtube.com/watch?v=jS4aFq5-91M&list=LL&index=2&t=4s)
-
-[![Trudvang Chronicles RPG](http://img.youtube.com/vi/n3V0oahXj94/0.jpg)](http://www.youtube.com/watch?v=n3V0oahXj94)
+[![JavaScript Programming - Full Course](http://img.youtube.com/vi/jS4aFq5-91M/0.jpg)](http://www.youtube.com/watch?v=jS4aFq5-91M)
 
 [![Tabletop Roleplaying Games as Social Practice](http://img.youtube.com/vi/QJwsWsTa1hI/0.jpg)](http://www.youtube.com/watch?v=QJwsWsTa1hI)
 
