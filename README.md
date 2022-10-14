@@ -58,14 +58,14 @@ Trudvang:
 
 [![JavaScript Programming - Full Course](http://img.youtube.com/vi/jS4aFq5-91M/0.jpg)](http://www.youtube.com/watch?v=jS4aFq5-91M)
 
-[![Tabletop Roleplaying Games as Social Practice](http://img.youtube.com/vi/QJwsWsTa1hI/0.jpg)](http://www.youtube.com/watch?v=QJwsWsTa1hI)
+[![Web Development Tutorial - JavaScript, HTML, CSS - Rock Paper Scissors Game](http://img.youtube.com/vi/jaVNP3nIAv0/0.jpg)](http://www.youtube.com/watch?v=jaVNP3nIAv0)
 
 [![Kevin Powell](http://img.youtube.com/vi/LGQuIIv2RVA/0.jpg)](http://www.youtube.com/watch?v=LGQuIIv2RVA)
 
 
 ### Links
 
-[Dungeons & Dragons](https://en.wikipedia.org/wiki/Dungeons_%26_Dragons)
+[freecodecamp](https://www.freecodecamp.org/news/javascript-projects-for-beginners/#how-to-create-a-color-flipper)
 
 [Trudvang](https://drakarochdemonertrudvang.fandom.com/wiki/Trudvang)
 
