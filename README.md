@@ -7,6 +7,7 @@
  - [Images](#Images)
  - [Youtube Videos](#Youtube-Videos)
  - [Links](#Links)
+ - [Extra Word](#Extra Word)
 
 # Introduction
 
@@ -68,3 +69,14 @@ But put me infront of a blank page and tell me to build a new code and I would s
 ### Links
 
 [Freecodecamp - 40 JavaScript Projects for Beginners](https://www.freecodecamp.org/news/javascript-projects-for-beginners/#how-to-create-a-color-flipper)
+
+#### Extra Word
+
+I am not proud of this project. Had I had a couple more weeks, maybe I could have made a better job. 
+But that is a big maybe. 
+My Rock-Paper-Scissor-Lizard-Spock is more or less a rip off from the Rock-Paper-Scissor video that is provided here.
+The quote machine that I have, is just me extending an existing work. The original work can be found in the Freecode camp link.
+As I said earlier, I can read and understand their code. I know what they do and how they work.
+If I were to make a new JavaScript, I would struggle to make it. But if I could cross reference with other code I have seen before. 
+Then hopefully, I could make my own code.
+But if wishes were horses, beggars would ride.
