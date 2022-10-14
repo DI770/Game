@@ -39,6 +39,18 @@ Just press Ctrl + F and search for the targeted name.
 
 ### Screenshot
 
+<img src="assets/screenshots/page 1 - computer screen.png"> 
+
+<img src="assets/screenshots/page 1 - mobile screen.png"> 
+
+<img src="assets/screenshots/page 2 - computer screen.png"> 
+
+<img src="assets/screenshots/page 2 - mobile screen.png"> 
+
+<img src="assets/screenshots/page 3 - computer screen.png"> 
+
+<img src="assets/screenshots/page 3 - mobile screen.png"> 
+
 
 ### Images
 
