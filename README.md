@@ -19,22 +19,14 @@ The quotes are set to refresh in a 30 second interval.
 
 ## Problems 
 
-Most of my problems that I have had, has been to centering my pictures and videos.
-At first, I had problems finding the right size. This was my least problem.
-After I needed to make them responsive to the display, I had problem finding the right code to get it right.
-It wasn´t until I started using "rem" instead of "em" that I got text sizes that i liked.
-When I started using % instead of px, I found I got the sizes I wanted more easily.
-
-But learning how to Center a picture. Or to make it Flex. That must have been the hardest to figure out during this project.
-
-Much of what I learned my Html and CSS coding was from watching Kevin Powell´s Youtube videos on the subject.
-I learned from there how some CSS coding make some things easier and how I could apply it to my current project.
-And hopefully to my future projects.
-He is also the one who taught me to stop coding in Chrome and start coding in Firefox instead.
-I will leave a link to the first video for beginners, down in the Youtube section.
-
-He even recommended to make 'Chapters' in ones CSS. For easy finding of different things in the CSS code.
-Just press Ctrl + F and search for the targeted name.
+I had a hard time learning JavaScript. 
+I learned the different things that you use in the coding. The coding of let, var, const, array and many more things. 
+But when I started to put down functions in java files, the knowledge I thought I had learned, flowed away from me. Like I never learned them.
+These two JavaScript files that is written here. What takes a good coder some hours, took me weeks.
+I needed to find information in several places and cross reference with what I knew, just to remember what I was seeing and what the code did, before I could code.
+And make it functional.
+Put me infront of a done JavaScript and I could read it and tell you what its functions does. 
+But put me infront of a blank page and tell me to build a new code and I would struggle. 
 
 
 ***
