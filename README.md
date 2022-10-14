@@ -10,6 +10,11 @@
 
 # Introduction
 
+In this project, there is three pages.
+The first page introduces the user to the rules game of Rock-Paper-Scissor-Lizard-Spock. 
+Page two is where the game can be played.
+On page three, the user can click thru several quotes. Or let them scroll by, one at a time. 
+The quotes are set to refresh in a 30 second interval.
 
 
 ## Problems 
