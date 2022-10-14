@@ -10,7 +10,7 @@ const _Scissor_div = document.getElementById('s');
 const _Lizard_div = document.getElementById('l');
 const _Spock_div = document.getElementById('sp');
 
-
+// Function to convert the letters from the function _Main to words
 function _Library (_Letter) {
     if (_Letter === 'r' ) return 'rock';
     if (_Letter === 'p') return 'paper';
@@ -19,6 +19,8 @@ function _Library (_Letter) {
     return 'Spock';
 }
 
+// Functions that calls the _Library function
+// The const of _UserWord and _ComputerWord implements paragraph text
 function _Win (_UserChoice, _ComputerChoice) {
     _PlayerScore++
     _PlayerScore_span.innerHTML = _PlayerScore;
@@ -45,12 +47,16 @@ function _Tie (_UserChoice, _ComputerChoice) {
     _Result_div_p.innerHTML = `${_UserWord} ${_Library(_UserChoice)+'.'} Equals ${_ComputerWord} ${_Library(_ComputerChoice)}. It is a tie!`
 }
 
+// Function  to randomly select a number and return the number as an object element from the array
 function _GetComputerChoice () {
     const _Choices = ['r', 'p', 's', 'l', 'sp'];
     const _RandomNumber = Math.floor(Math.random() * 5);
 	return _Choices [_RandomNumber];
 }
 
+// Function  to call the _GetComputerChoice function and stores the returned _Choices object
+// _Game function calls upon the _Main function to understand what has been chosen
+// Switch case statements that compares between _UserChoice and _ComputerChoice value
 function _Game(_UserChoice) {
     const _ComputerChoice = _GetComputerChoice ();
     switch (_UserChoice + _ComputerChoice){
@@ -88,7 +94,7 @@ function _Game(_UserChoice) {
 }
 }
 
-_Main();
+// Function for event listener button to generate your choice	
 
 function _Main() {
     _Rock_div.addEventListener('click', function () {
@@ -112,3 +118,4 @@ function _Main() {
     })
 }
 
+_Main();

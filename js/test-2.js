@@ -324,14 +324,14 @@ let _Quotes = [
 	}
 ];
 
-//Function to randomly select a quote value and return a random quote object from the quotes array
+//Function to randomly select a quote value and return a random quote object from the _Quotes array
 function _GetRandomQuote () {
 	const _RandomNumber = Math.floor(Math.random() * (_Quotes.length));
 	const _RandomQuote = _Quotes[_RandomNumber];
 	return _RandomQuote;
 }	
 
-//Function to call the _GetRandomQuote function and stores the returned quote object in a variable
+//Function to call the _GetRandomQuote function and stores the returned quote object
 //Constructs a string containing the different properties of the quote object 
 function _PrintQuote () {
 	const _Quotes = _GetRandomQuote ();
@@ -339,13 +339,13 @@ function _PrintQuote () {
 	let _QuoteString = `<p class="quote">${_Quotes.quote}</p><p class="source">${_Quotes.source}`;
 		if (_Quotes.citation) {_QuoteString += `<span class="citation">${_Quotes.citation}</span>`}
 		if (_Quotes.year) {_QuoteString += `<span class="year">${_Quotes.year}</span></p>`}
-		else {_QuoteString += '</p>'};
+		else {_QuoteString += '</p>'}
 	_QuoteContainer_id.innerHTML = _QuoteString;
 }
 
 //Quote automatically refreshes every 30 seconds
 window.setInterval(function(){
-printQuote ();
+_PrintQuote ();
 }, 30000);
 
 //Event listener on LoadQuote button to generate new quote		
