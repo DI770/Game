@@ -340,7 +340,7 @@ function _PrintQuote () {
 		if (_Quotes.citation) {_QuoteString += `<span class="citation">${_Quotes.citation}</span>`}
 		if (_Quotes.year) {_QuoteString += `<span class="year">${_Quotes.year}</span></p>`}
 		else {_QuoteString += '</p>'};
-	_QuoteContainer_id.innerHTML = quoteString;
+	_QuoteContainer_id.innerHTML = _QuoteString;
 }
 
 //Quote automatically refreshes every 30 seconds
